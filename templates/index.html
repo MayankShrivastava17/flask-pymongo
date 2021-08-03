@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- scroll to top  -->
+<div>
+    <button class="button" onclick="topFunction()" id="myBtn" title="Go to top"><i class="far fa-hand-point-up"></i>Top
+    </button>
+</div>
+
+<br><br>
+
+<h1 class="title is-1" id="title">Welcome</h1>
+<br><br>
+<h3 class="subtitle" id="intro-text">A Personal Blogging Site.</h3>
+<br><br>
+{% for blog in blogs %}
+<div class="blogger">
+    <hr>
+    <h2 class="title is-2" id="title-for-blog">{{blog["Title"]}}</h2>
+    <br>
+    <h3 class="subtitle is-4" id="blog-content">{{blog["Blog"]}}</h3>
+    <br>
+    <h5><strong>{{blog["Upload Date"]}} | {{blog["Upload Time"]}}</strong></h5>
+    <br>
+    <hr>
+    <br><br>
+</div>
+{% endfor %}
+
+{% endblock %}

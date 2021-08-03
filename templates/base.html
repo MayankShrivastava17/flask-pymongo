@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    {% block style %}{% endblock %}
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/eeed48d253.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+    <!-- google font for welcome tag -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+    <!-- google font for blog content  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+
+<body id="top">
+    <nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
+        <!---</nav>style="background-color:#a64de652;">-->
+        <div class="navbar-brand">
+            <a href="/">
+                <h1 id="navbar-logo">pyblogger</h1>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a href="/" class="navbar-item" id="home-navbar">
+                    <strong>
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span>Home</span>
+                    </strong>
+                </a>
+                <a href="/blog" class="navbar-item">
+                    <strong>
+                        <span class="icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </span>
+                        <span>Create</span>
+                    </strong>
+                </a>
+            </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <label>Made with <i class="fas fa-heart heart" style="color:red;"></i> and <i class="fab fa-osi open"
+                    style="color:green;"></i> , </label>
+            <p id="copyright">
+
+            </p>
+        </div>
+    </footer>
+    <script>
+        var currYear = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML = "By <b>Mayank Shrivastava</b> " + " &copy " + currYear;
+    </script>
+    <script src="../static/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Create{% endblock %}
+
+{% block content %}
+
+<h1 class="title is-1" id="title">Create</h1>
+<br>
+<form action="" method="post">
+    <div class="blog-title">
+        <label for="Title" class="title is-1 tt"><strong>Title</strong></label>
+        <br>
+        <input type="text" name="tit" class="input tit" id="tit" placeholder="Give some intresting title" required>
+    </div>
+    <br>
+    <div class="content">
+        <label for="Blog" class="title is-1 cont"><strong>Content</strong></label>
+        <br>
+        <textarea name="blog" id="blog" placeholder="Remember, to be nice!" required></textarea>
+    </div>
+    <div class="buttons">
+        <button class="button is-light is-link"><a href="/"
+                style="text-decoration: none;"><strong>Upload</a></strong></button>
+        <!-- <a style="text-decoration:none" href="/">
+            <button class="button is-danger is-outlined is-large">
+                <span>Upload</span>
+                <span class="icon is-small">
+                    <i class="far fa-hand-point-down"></i>
+                </span>
+            </button>
+        </a> -->
+    </div>
+</form>
+<br>
+<div class="center">
+    <a href="/" style="text-decoration: none;">
+        <button class="button is-outlined">
+            <strong>Back</strong>
+            <span class="icon is-small">
+                <i class="far fa-hand-point-left"></i>
+            </span>
+        </button>
+    </a>
+</div>
+<br><br>
+
+{% endblock %}
