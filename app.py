@@ -52,9 +52,14 @@ def blog():
             record.insert_one(user_input)
     return render_template('create.html')
 
+# api to print all the document in the database
+@app.route('/dumpall')
+def all():
+    n = record.find({})
+    ent = json.loads(json_util.dumps(n))
+    return jsonify(ent)
+
 # handing the error
-
-
 @app.errorhandler(404)
 # inbuilt function which takes error as parameter
 def not_found(e):
