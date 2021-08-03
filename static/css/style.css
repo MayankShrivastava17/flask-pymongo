@@ -1,0 +1,190 @@
+#title {
+    text-align: center;
+    color: darkgoldenrod;
+    font-family: 'Playfair Display', serif;
+}
+
+/* #home-navbar {
+    margin-right: 100px;
+    margin-left: 500px;
+} */
+
+#intro-text {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+}
+
+/* for create page  */
+.tt {
+    display: flex;
+    justify-content: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin: auto;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#blog {
+    width: 750px;
+    height: 200px;
+    resize: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+}
+
+@media only screen and (max-width: 600px) {
+    #blog {
+        width: 750px;
+        height: 200px;
+        resize: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #888;
+    }
+}
+
+#tit {
+    width: 100vh;
+    height: 5vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .tt {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        margin: auto;
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    #blog {
+        margin: auto;
+        display: block;
+        width: 450px;
+        height: 150px;
+        outline: rgb(253, 0, 0);
+        border: 1px solid rgb(46, 61, 199);
+    }
+}
+
+textarea {
+    font-size: 15px;
+}
+
+/* end of the create page  */
+
+@media only screen and (max-width: 600px) {
+    #home-navbar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* blog in the index.html  */
+.blogger {
+    text-align: center;
+}
+
+#title-for-blog {
+    text-decoration: underline;
+}
+
+/* scroll to top button  */
+#myBtn {
+    display: none;
+    position: fixed;
+    text-align: center;
+    bottom: 10px;
+    z-index: 99;
+    right: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    width: 75px;
+    margin-right: 10px;
+    background-color: red;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+/* scroll bar  */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b05ec586;
+}
+
+/* navigation bar logo  */
+#navbar-logo {
+    padding: 0;
+    margin-left: 5px;
+    font-size: 35px;
+    color: #5ec58086;
+    text-decoration: underline;
+    /* font-family: 'Comfortaa', cursive; */
+    /* font-family:'WindSong',cursive; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Londrina Solid', cursive;
+}
+
+/* for blog content  */
+#blog-content {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* for centering element inside div  */
+.center {
+    display: flex;
+    justify-content: center;
+}
